@@ -20,7 +20,8 @@ public class Event extends NodeMultiple {
 
 	private GUIManager gui;
 	private String playerAnswer;
-	private
+	private int chosenPath;
+	private int id;
 
 	public Event(GUIManager gui, String text) {
 		this.gui = gui;
@@ -58,14 +59,14 @@ public class Event extends NodeMultiple {
 	 * @return the chosenPath
 	 */
 	public int getChosenPath() {
-		/* TO BE COMPLETED */
+		return chosenPath;
 	}
 
 	/**
 	 * @param chosenPath the chosenPath to set
 	 */
 	public void setChosenPath(int chosenPath) {
-		/* TO BE COMPLETED */
+		this.chosenPath = chosenPath;
 	}
 
 	/* Methods */
@@ -105,21 +106,21 @@ public class Event extends NodeMultiple {
 	 * @return the gui
 	 */
 	public GUIManager getGui() {
-		/* TO BE COMPLETED */
+		return gui;
 	}
 
 	/**
 	 * @param gui the gui to set
 	 */
 	public void setGui(GUIManager gui) {
-		/* TO BE COMPLETED */
+		this.gui = gui;
 	}
 
 	/**
 	 * @return the id
 	 */
 	public int getId() {
-		/* TO BE COMPLETED */
+		return id;
 	}
 
 	/* Methods */

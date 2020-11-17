@@ -17,11 +17,11 @@ public class NodeMultiple {
 	public static int NODE_MAX_ARITY = 10;
 
 	/* Overridden methods */
-//	@Override
-//	public String toString() {
-//		/* TO BE COMPLETED */
-//	}
-//
+	@Override
+	public String toString() {
+		/* TO BE COMPLETED */
+	}
+
 	/* Getters/Setters */
 	/**
 	 * Gets the {@code i}th daughter node.
@@ -31,9 +31,9 @@ public class NodeMultiple {
 	 * @param i the index of the daughter node.
 	 * @return the {@code i}th daughter node, or {@code null} if it does not exist.
 	 */
-//	public NodeMultiple getDaughter(int i) {
-//		/* TO BE COMPLETED */
-//	}
+	public NodeMultiple getDaughter(int i) {
+		/* TO BE COMPLETED */
+	}
 
 	/**
 	 * Sets the {@code i}th daughter node to the input parameter {@code daughter}.
@@ -56,9 +56,9 @@ public class NodeMultiple {
 	/**
 	 * @return all the daughters
 	 */
-//	public NodeMultiple[] getDaughters() {
-//		/* TO BE COMPLETED */
-//	}
+	public NodeMultiple[] getDaughters() {
+		/* TO BE COMPLETED */
+	}
 
 	/**
 	 * @param daughters the daughters to set
@@ -79,45 +79,45 @@ public class NodeMultiple {
 		/* TO BE COMPLETED */
 	}
 
-//	/**
-//	 * @return the content data
-//	 */
-//	public Object getData() {
-//		/* TO BE COMPLETED */
-//	}
-//
-//	/**
-//	 * @param data
-//	 */
-//	public void setData(Object data) {
-//		/* TO BE COMPLETED */
-//	}
-//
-//	/**
-//	 * @return {@code true} if and only if this node has at least one non-null
-//	 *         daughter node.
-//	 */
-//	public boolean hasDaughters() {
-//		/* TO BE COMPLETED */
-//	}
-//
-//	/* Constructors */
-//	/**
-//	 * Default constructor.
-//	 */
-//	public NodeMultiple() {
-//		/* TO BE COMPLETED */
-//	}
-//
-//	/**
-//	 * Constructor. Sets the content data to {@code data} and creates an empty set
-//	 * of daughters.
-//	 *
-//	 * @param data
-//	 */
-//	public NodeMultiple(Object data) {
-//		/* TO BE COMPLETED */
-//	}
+	/**
+	 * @return the content data
+	 */
+	public Object getData() {
+		/* TO BE COMPLETED */
+	}
+
+	/**
+	 * @param data
+	 */
+	public void setData(Object data) {
+		/* TO BE COMPLETED */
+	}
+
+	/**
+	 * @return {@code true} if and only if this node has at least one non-null
+	 *         daughter node.
+	 */
+	public boolean hasDaughters() {
+		/* TO BE COMPLETED */
+	}
+
+	/* Constructors */
+	/**
+	 * Default constructor.
+	 */
+	public NodeMultiple() {
+		/* TO BE COMPLETED */
+	}
+
+	/**
+	 * Constructor. Sets the content data to {@code data} and creates an empty set
+	 * of daughters.
+	 *
+	 * @param data
+	 */
+	public NodeMultiple(Object data) {
+		/* TO BE COMPLETED */
+	}
 }
 
 // eof
