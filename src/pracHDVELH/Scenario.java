@@ -16,8 +16,9 @@ public class Scenario {
 	private GUIManager gui;
 
 	/* TO BE COMPLETED */
-	public Scenario(GUIManager gui, Event startevent){
-
+	public Scenario(GUIManager gui, Event head){
+		this.gui = gui;
+		this.head = head;
 	}
 
 	public String run(){
