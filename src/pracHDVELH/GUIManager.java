@@ -4,6 +4,7 @@
  */
 package pracHDVELH;
 
+import javax.script.ScriptContext;
 import java.io.InputStream;
 import java.io.PrintStream;
 import java.util.Scanner;
@@ -21,7 +22,8 @@ public class GUIManager {
    * @param s
    */
   public void outputln(String s) {
-	out.println(s);
+
+      out.println(s);
   }
 
   /**
@@ -44,14 +46,16 @@ public class GUIManager {
    * @return
    */
   public Scanner getInputReader() {
-	return inputReader;
+
+      return inputReader;
   }
 
   /**
    * Constructor. Sets the GUI to the default system IOs.
    */
   public GUIManager() {
-	this(System.in, System.out, System.err);
+
+      this(System.in, System.out, System.err);
   }
 
   /**
@@ -67,7 +71,12 @@ public class GUIManager {
   }
 
   public void setInputReader(Scanner inputReader){
+
       this.inputReader = inputReader;
+  }
+
+  public int getAnswer(){
+      return inputReader.nextInt();
   }
 }
 

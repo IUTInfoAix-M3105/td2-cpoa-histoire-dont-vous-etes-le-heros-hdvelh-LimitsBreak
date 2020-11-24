@@ -19,14 +19,24 @@ public class Event extends NodeMultiple {
 	public static final String WARNING_MSG_INTEGER_EXPECTED = "Please input a integer within range!";
 
 	private GUIManager gui;
-	private String playerAnswer;
+	private String playerAnswer = null;
 	private int chosenPath;
 	private int id;
 
-	public Event(GUIManager gui, String text) {
+	public Event(GUIManager gui, String data) {
 		this.gui = gui;
-		this.setData(text);
+		super.setData(data);
 	}
+
+	public Event(){
+		gui = new GUIManager();
+	}
+
+	@java.lang.Override
+	public String toString() {
+		return "Event #" + getId() + " ([class]):" + getData();
+	}
+
 	/**
 	 * @return the playerAnswer
 	 */
@@ -74,7 +84,7 @@ public class Event extends NodeMultiple {
 	 * @see pracHDVELH.NodeMultiple#getData()
 	 */
 	public String getData() {
-		/* TO BE COMPLETED */
+		return super.getData().toString();
 	}
 
 	/**
@@ -82,7 +92,7 @@ public class Event extends NodeMultiple {
 	 * @param data
 	 */
 	public void setData(String data) {
-		/* TO BE COMPLETED */
+		super.setData(data);
 	}
 
 	/**
@@ -90,7 +100,7 @@ public class Event extends NodeMultiple {
 	 */
 	@Override
 	public Event getDaughter(int i) {
-		/* TO BE COMPLETED */
+		return (Event) super.getDaughter(i);
 	}
 
 	/**
@@ -99,7 +109,7 @@ public class Event extends NodeMultiple {
 	 * @param i
 	 */
 	public void setDaughter(Event daughter, int i) {
-		/* TO BE COMPLETED */
+		super.setDaughter(daughter,i);
 	}
 
 	/**
@@ -125,6 +135,13 @@ public class Event extends NodeMultiple {
 
 	/* Methods */
 	/* TO BE COMPLETED */
+	public Event run(){
+		gui.output(getData());
+		int i = gui.getAnswer()-1;
+
+		if(i > NODE_MAX_ARITY)return null;
+		return getDaughter(i);
+	}
 }
 
 // eof
